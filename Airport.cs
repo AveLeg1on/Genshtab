@@ -11,12 +11,7 @@ namespace Genshtab
     {
         public int _quantityItems;
         public double _weight;
-        public Airport(int quantityItems, double weigh)
-        {
-            _quantityItems = quantityItems;
-            _weight = weigh;
-            
-        }
+      public int QuantityItems { get; set; }    
         public double Weight
         {
             get { return _weight; } 
@@ -25,6 +20,11 @@ namespace Genshtab
         public double Calculation()
         {
            return _weight / _quantityItems;
+        }
+        public void StepToBack(double dubl)
+        {
+            _quantityItems--;
+            Weight = Weight - dubl;
         }
       
     }

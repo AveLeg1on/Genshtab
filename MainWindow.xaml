@@ -6,18 +6,19 @@
         xmlns:local="clr-namespace:Genshtab"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" >
-    <Grid>
+    <Grid Background="#FF028616">
         <TextBox Name="Item" HorizontalAlignment="Left" Margin="505,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="Bagage" HorizontalAlignment="Left" Margin="367,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.025,0.483"/>
         <Label Content="Назване багажа" HorizontalAlignment="Left" Margin="378,13,0,0" VerticalAlignment="Top"/>
         <Label Content="вес предмета" HorizontalAlignment="Left" Margin="654,90,0,0" VerticalAlignment="Top"/>
         <Label Content="Название предмета" HorizontalAlignment="Left" Margin="530,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.321,0.464"/>
-        <Label Name="answer"  HorizontalAlignment="Left" Margin="367,241,0,0" VerticalAlignment="Top"/>
+        <Label  Name="answer"   HorizontalAlignment="Left" Margin="390,336,0,0" FontSize="18" Height="63" VerticalAlignment="Top" Width="366" Foreground="#FF480000"/>
         <Button Content="Записать" HorizontalAlignment="Left" Margin="426,155,0,0" VerticalAlignment="Top" Width="90" Height="45" Click="Button_Click"/>
         <TextBox  Name="ves" Margin="636,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
-        <ListBox Name="Listik" Margin="0,0,459,0"/>
+        <ListBox Name="Listik" Margin="0,0,459,0" Background="#FF0F54B1" Foreground="#FF92C512"/>
         <Button Content="Записать" HorizontalAlignment="Left" Margin="426,155,0,0" VerticalAlignment="Top" Width="90" Height="45" Click="Button_Click"/>
-        <Button Content="Узнать" HorizontalAlignment="Left" Margin="636,190,0,0" VerticalAlignment="Top" Width="90" Height="45" Click="Button1_Click"/>
+        <Button Content="Узнать" HorizontalAlignment="Left" Margin="426,219,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="Button1_Click"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="535,159,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="Delete"/>
 
 
     </Grid>
